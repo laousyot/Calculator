@@ -6,11 +6,11 @@ An easy way to do a calculator in C is to ask the user for the first and second 
 main() 
 { 
 
-char op; 
-int a,b; 
-printf("Give operand a:"); 
-scanf("%d",&a); 
-printf("Give the operator (+,-,*,/)"); 
+char op;
+int a,b;
+printf("Give operand a:");
+scanf("%d",&a);
+printf("Give the operator (+,-,*,/)");
 scanf("%c",&op); 
 printf("Give operand b:"); 
 scanf("%d",&b); 
@@ -21,9 +21,11 @@ case'-':printf("%d-%d=%d",a,b,a-b);break;
 case'*':printf("%d*%d=%d",a,b,a*b);break; 
 case'/':if(b==0) 
 printf("Error: Division by 0!");break; 
+
 else 
 printf("%d/%d=%d",a,b,a/b);break; 
 default:printf("Operator not accepted"); 
+
 } 
 
 } 
