@@ -1,4 +1,6 @@
 Calculator Othmane Laousy
+
+
 An easy way to do a calculator in C is to ask the user for the first and second number and then the operators (+,-,* or /), calculate and print the result easily handling edge cases (division by 0…) using if statements. Since we went through some Objective-c during the lecture here is how I would implement a calculator as a view based application: 
 So first of all, we are going to build the interface dragging and dropping buttons and frames provided by XCode.Then in the .h file we add the IBOutlet to be able to modify the display from the code and the IBActions, that we will call when touching the buttons. We will add one IBAction per button.After that we link the view and the controller using what we saw in class. (All our buttons are going to be Touch Up Inside)
 Now we need to consider the properties that will help for calculating:
