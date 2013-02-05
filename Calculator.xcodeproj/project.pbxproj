@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C92B66016C0A40C00CBA24B /* arches.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C92B65F16C0A40C00CBA24B /* arches.png */; };
 		CE6E679B16AC886200BFE447 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E679A16AC886200BFE447 /* UIKit.framework */; };
 		CE6E679D16AC886200BFE447 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E679C16AC886200BFE447 /* Foundation.framework */; };
 		CE6E679F16AC886200BFE447 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E679E16AC886200BFE447 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C92B65F16C0A40C00CBA24B /* arches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arches.png; path = ../../../../Downloads/arches/arches.png; sourceTree = "<group>"; };
 		CE6E679616AC886200BFE447 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6E679A16AC886200BFE447 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE6E679C16AC886200BFE447 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +119,7 @@
 		CE6E67A016AC886200BFE447 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				2C92B65F16C0A40C00CBA24B /* arches.png */,
 				CE6E67A916AC886200BFE447 /* OTLAppDelegate.h */,
 				CE6E67AA16AC886200BFE447 /* OTLAppDelegate.m */,
 				CE6E67B216AC886200BFE447 /* MainStoryboard.storyboard */,
@@ -237,6 +240,7 @@
 				CE6E67AF16AC886200BFE447 /* Default@2x.png in Resources */,
 				CE6E67B116AC886200BFE447 /* Default-568h@2x.png in Resources */,
 				CE6E67B416AC886200BFE447 /* MainStoryboard.storyboard in Resources */,
+				2C92B66016C0A40C00CBA24B /* arches.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +452,7 @@
 				CE6E67D116AC886200BFE447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE6E67D216AC886200BFE447 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +461,7 @@
 				CE6E67D416AC886200BFE447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
