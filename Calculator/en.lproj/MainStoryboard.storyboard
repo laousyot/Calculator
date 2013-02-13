@@ -97,7 +97,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushMinus:" destination="2" eventType="touchDown" id="ole-n3-Q5P"/>
+                                    <action selector="pushOperand:" destination="2" eventType="touchDown" id="kFk-7G-IZF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD8-Ch-obc">
@@ -113,7 +113,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushPlus:" destination="2" eventType="touchDown" id="bLQ-r6-0SV"/>
+                                    <action selector="pushOperand:" destination="2" eventType="touchDown" id="CDj-Hk-B1D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGP-gW-C0M">
@@ -169,7 +169,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushDiv:" destination="2" eventType="touchDown" id="Cyz-BB-aiB"/>
+                                    <action selector="pushOperand:" destination="2" eventType="touchDown" id="uL3-il-I5d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLK-kF-pCD">
@@ -188,7 +188,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushMult:" destination="2" eventType="touchDown" id="J7N-XY-oha"/>
+                                    <action selector="pushOperand:" destination="2" eventType="touchDown" id="XUW-ue-4wr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPg-oX-xyP">
@@ -318,13 +318,16 @@
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="52"/>
                                 <color key="tintColor" red="0.082352943720000002" green="0.34901961679999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="()">
+                                <state key="normal" title="π">
                                     <color key="titleColor" red="0.099169561810000001" green="0.1316732638" blue="0.81069548229999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.24877064199999999" green="0.62378673299999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushPi:" destination="2" eventType="touchDown" id="IVf-gs-qzH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-OZ-Wi7">
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -460,6 +463,8 @@
                 <relationship kind="action" name="pushMult:"/>
                 <relationship kind="action" name="pushNeg:"/>
                 <relationship kind="action" name="pushNumber:"/>
+                <relationship kind="action" name="pushOperand:"/>
+                <relationship kind="action" name="pushPi:"/>
                 <relationship kind="action" name="pushPlus:"/>
                 <relationship kind="action" name="pushPoint:"/>
                 <relationship kind="outlet" name="displayer" candidateClass="UILabel"/>

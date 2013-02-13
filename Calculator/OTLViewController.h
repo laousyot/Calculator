@@ -11,20 +11,19 @@
 
 @interface OTLViewController : UIViewController{
     IBOutlet UILabel *displayer;
-    double number1;
-	char operator;
-	bool update;
-	bool clicoperator;
     
+    NSMutableString *cal;
     int numberNeg;
+    int nbNegatives;
+    BOOL Opressed;
+    BOOL Minuspressed;
+    BOOL numOrOpPressed;
+    BOOL Cpressed;
+    
 }
 
 @property (nonatomic,retain) UILabel *displayer;
-@property(readwrite) double number1;
-@property(readwrite) char  operator;
-@property(readwrite) bool  update;
-@property(readwrite) bool  clicoperator;
-
+@property(readwrite) NSMutableString *cal;
 
 // Numbers
 - (IBAction) pushNumber:	(id) sender;
@@ -32,11 +31,9 @@
 - (IBAction) pushPoint:	(id) sender;
 
 // Mathematical operators
-- (IBAction) pushPlus:		(id) sender;
-- (IBAction) pushMinus:		(id) sender;
-- (IBAction) pushMult:		(id) sender;
-- (IBAction) pushDiv:		(id) sender;
-- (void) calcul;
+- (IBAction) pushOperand:		(id) sender;
+- (IBAction) pushPi:		(id) sender;
+- (double) calcul: (NSMutableString *) arg;
 
 // Calculus
 - (IBAction) pushEqual:		(id) sender;
