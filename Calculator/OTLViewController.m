@@ -22,7 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     // View
-    UIImage *patternImage= [UIImage imageNamed:@"arches.png"];
+    UIImage *patternImage= [UIImage imageNamed:@"arches1.png"];
     self.view.backgroundColor=[UIColor colorWithPatternImage:patternImage];
     
     cal = [NSMutableString stringWithCapacity:5];
